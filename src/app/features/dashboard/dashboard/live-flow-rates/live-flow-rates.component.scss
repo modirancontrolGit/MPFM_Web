@@ -1,0 +1,18 @@
+label {
+  align-self: baseline;
+  user-select: none;
+  @media (max-width: 40rem) {
+    font-size: 10px;
+  }
+}
+
+.ant-radio-wrapper {
+  font-size: 11px;
+}
+
+.ant-radio-group {
+  display: flex;
+  label {
+    margin: 0;
+  }
+}

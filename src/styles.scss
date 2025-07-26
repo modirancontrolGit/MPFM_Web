@@ -1,1 +1,14 @@
 @use "tailwindcss";
+
+.ant-alert {
+  padding: 0 4px !important;
+  @media (max-width: 640px) {
+    font-size: 11px;
+  }
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

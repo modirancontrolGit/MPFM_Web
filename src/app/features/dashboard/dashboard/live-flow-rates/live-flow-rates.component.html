@@ -1,0 +1,145 @@
+<div
+  class="bg-pink-50 relative w-full h-full grid grid-cols-3 gap-2 p-2 border border-gray-300 rounded-md font-semibold"
+>
+  <!-- legend -->
+  <nz-alert
+    class="absolute left-[-1px] top-[-8px] !p-0"
+    nzType="info"
+    nzMessage="Live Gas & Water Ratios"
+  ></nz-alert>
+
+  <div class="flex flex-col col-span-3 gap-2 mb-2">
+    <!-- header -->
+    <div class="grid grid-cols-3 col-span-3 gap-2">
+      <span class="h-[25px]"></span>
+      <span class="border-b border-gray-400 block">Flow Rates</span>
+      <span class="border-b border-gray-400 block">Statistics</span>
+    </div>
+    <div class="grid grid-cols-6 col-span-3 gap-2">
+      <span class="border-b border-gray-400 block text-center">Phases</span>
+      <span class="border-b border-gray-400 block text-center">Unit</span>
+      <span class="border-b border-gray-400 block text-center">Instant</span>
+      <span class="border-b border-gray-400 block text-center">1H Average</span>
+      <div class="grid grid-cols-3 gap-3 col-span-2">
+        <span class="border-b border-gray-400 block text-center">Min</span>
+        <span class="border-b border-gray-400 block text-center">Max</span>
+        <span class="border-b border-gray-400 block text-center">Average</span>
+      </div>
+    </div>
+    <!-- data -->
+    <div class="flex flex-col col-span-3 pt-2">
+      <div class="grid grid-cols-6 h-[20px] text-center gap-1">
+        <label nz-checkbox>OIL</label>
+        <span class="text-red-400">STB/D</span>
+        <input nz-input placeholder="" type="number" />
+        <input nz-input placeholder="" type="number" />
+        <div class="grid grid-cols-3 col-span-2 gap-1">
+          <input nz-input placeholder="" type="number" />
+          <input nz-input placeholder="" type="number" />
+          <input nz-input placeholder="" type="number" />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col col-span-3 pt-2">
+      <div class="grid grid-cols-6 h-[20px] text-center gap-1">
+        <label nz-checkbox>WATER</label>
+        <span class="text-red-400">STB/D</span>
+        <input nz-input placeholder="" type="number" />
+        <input nz-input placeholder="" type="number" />
+        <div class="grid grid-cols-3 col-span-2 gap-1">
+          <input nz-input placeholder="" type="number" />
+          <input nz-input placeholder="" type="number" />
+          <input nz-input placeholder="" type="number" />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col col-span-3 pt-2">
+      <div class="grid grid-cols-6 h-[20px] text-center gap-1">
+        <label nz-checkbox>LIQUID</label>
+        <span class="text-red-400">STB/D</span>
+        <input nz-input placeholder="" type="number" />
+        <input nz-input placeholder="" type="number" />
+        <div class="grid grid-cols-3 col-span-2 gap-1">
+          <input nz-input placeholder="" type="number" />
+          <input nz-input placeholder="" type="number" />
+          <input nz-input placeholder="" type="number" />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col col-span-3 pt-2">
+      <div class="grid grid-cols-6 h-[20px] text-center gap-1">
+        <label nz-checkbox>GAS</label>
+        <span class="text-red-400">MSCF/D</span>
+        <input nz-input placeholder="" type="number" />
+        <input nz-input placeholder="" type="number" />
+        <div class="grid grid-cols-3 col-span-2 gap-1">
+          <input nz-input placeholder="" type="number" />
+          <input nz-input placeholder="" type="number" />
+          <input nz-input placeholder="" type="number" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅✅✅ -->
+  <!-- left middle -->
+  <div class="flex flex-col h-[50px] gap-1">
+    <div class="flex items-center justify-center border border-gray-400 h-fit">
+      Measuring Condition
+    </div>
+    <div class="flex items-center justify-center border border-gray-400 h-fit">
+      System Unit
+    </div>
+  </div>
+  <!-- middle middle -->
+  <div class="flex flex-col justify-between h-[50px]">
+    <nz-radio-group>
+      <label nz-radio nzValue="Standard">Standard</label>
+      <label nz-radio nzValue="Line">Line</label>
+    </nz-radio-group>
+    <input class="h-6" nz-input placeholder="Field" type="number" />
+  </div>
+  <!-- right middle -->
+  <div class="flex flex-col justify-between h-[50px] gap-1">
+    <input
+      class="h-6"
+      nz-input
+      placeholder="Statistics Start and Duration"
+      type="number"
+    />
+    <div class="flex flex-col md:flex-row justify-between text-[12px]">
+      <span>2025/07/05</span>
+      <div
+        class="flex items-center justify-center border border-gray-400 h-fit px-2"
+      >
+        Reset All
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅✅✅ -->
+  <!-- bottom -->
+  <!-- <div class="col-span-3 border-t border-gray-400"></div> -->
+  <div class="col-span-3 font-normal text-[12px] mt-2">
+    Process Values (time averaged)
+  </div>
+  <div class="col-span-3 grid grid-cols-3 gap-1">
+    <div class="flex items-center gap-1">
+      <!-- <span class="text-red-500">Pressure</span> -->
+      <input class="grow" nz-input placeholder="Pressure" type="number" />
+    </div>
+    <div class="flex items-center gap-1">
+      <!-- <span class="text-red-500">Temperature(F)</span> -->
+      <input class="grow" nz-input placeholder="Temperature(F)" type="number" />
+    </div>
+    <div class="flex items-center gap-1">
+      <!-- <span class="text-red-500">Venturi Dynamic</span> -->
+      <input
+        class="grow"
+        nz-input
+        placeholder="Venturi Dynamic"
+        type="number"
+      />
+    </div>
+  </div>
+</div>

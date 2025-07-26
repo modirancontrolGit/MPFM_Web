@@ -1,11 +1,12 @@
-<div class="h-full w-full flex flex-col gap-2">
+<div class="h-full w-full flex flex-col gap-4">
   <div class="w-full flex items-center bg-gray-200 font-semibold rounded-sm py-1">
-    <div class="grow flex justify-center border-r border-gray-300">OFFLINE</div>
+    <div class="grow flex justify-center border-r border-gray-400">OFFLINE</div>
     <div class="w-40 flex justify-center">NO ALARM</div>
 </div>
-  <div class="h-[500px] w-full grid grid-cols-6 ">
-    <div class="h-full col-span-6 lg:col-span-2 bg-red-100"></div>
-    <div class="h-full col-span-6 lg:col-span-2 bg-green-100"></div>
-    <div class="h-full col-span-6 lg:col-span-2 bg-blue-100"></div>
+  <div class="h-fit w-full grid grid-cols-10 gap-4 text-[10px] md:text-base">
+    <app-live-flow-rates class="h-full col-span-10 2xl:col-span-4"></app-live-flow-rates>
+    <app-live-volumes class="h-full col-span-10 2xl:col-span-2"></app-live-volumes>
+    <app-live-gas class="h-full col-span-10 2xl:col-span-4"></app-live-gas>
   </div>
+  <app-plot-options></app-plot-options>
 </div>
