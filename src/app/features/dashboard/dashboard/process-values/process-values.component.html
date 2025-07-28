@@ -1,0 +1,28 @@
+<div
+  class="bg-gray-100 relative w-full h-full p-2 grid grid-cols-3 gap-2 md:pb-2 rounded-md font-semibold"
+>
+  <nz-alert
+    class="absolute left-[-1px] top-[-8px] !p-0"
+    nzType="info"
+    nzMessage="Process Values (Time app-live-gas)"
+  ></nz-alert>
+  <div class="col-span-3 grid grid-cols-3 gap-1 pt-2">
+    <div class="flex flex-col">
+      <span class="text-red-500 text-[12px]">Pressure</span>
+      <input class="grow" nz-input placeholder="Pressure" type="number" />
+    </div>
+    <div class="flex flex-col">
+      <span class="text-red-500 text-[12px]">Temperature(F)</span>
+      <input class="grow" nz-input placeholder="Temperature(F)" type="number" />
+    </div>
+    <div class="flex flex-col">
+      <span class="text-red-500 text-[12px]">Venturi Dynamic</span>
+      <input
+        class="grow"
+        nz-input
+        placeholder="Venturi Dynamic"
+        type="number"
+      />
+    </div>
+  </div>
+</div>

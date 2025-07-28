@@ -1,5 +1,5 @@
 <div
-  class="bg-green-50 relative flex flex-col w-full h-full px-2 border border-gray-300 rounded-md font-semibold"
+  class="bg-gray-100 relative flex flex-col w-full h-full p-4 rounded-md font-semibold"
 >
   <nz-alert
     class="absolute left-[-1px] top-[-8px] !p-0"
@@ -7,11 +7,11 @@
     nzMessage="Live Volumes"
   ></nz-alert>
 
-  <div class="w-full grow">
+  <div class="w-full grow mb-4">
     <span class="border-b border-gray-400 block text-center">Cumulative</span>
 
     <!-- table header -->
-    <div class="w-full grid grid-cols-2 gap-2">
+    <div class="w-full grid grid-cols-2 gap-6">
       <span class="border-b border-gray-400 block text-center text-nowrap">
         Metered Volume
         <span class="text-red-400 text-[10px]">(Running...)</span> </span
@@ -20,19 +20,19 @@
 
     <!-- table -->
     <div class="grid grid-cols-2 gap-2 py-1">
-      <input nz-input placeholder="" type="number" />
+      <input class="!bg-yellow-100" nz-input placeholder="" type="number" />
       <span class="text-center text-red-400">STB</span>
     </div>
     <div class="grid grid-cols-2 gap-2 py-1">
-      <input nz-input placeholder="" type="number" />
+      <input class="!bg-yellow-100" nz-input placeholder="" type="number" />
       <span class="text-center text-red-400">STB</span>
     </div>
     <div class="grid grid-cols-2 gap-2 py-1">
-      <input nz-input placeholder="" type="number" />
+      <input class="!bg-yellow-100" nz-input placeholder="" type="number" />
       <span class="text-center text-red-400">STB</span>
     </div>
     <div class="grid grid-cols-2 gap-2 py-1">
-      <input nz-input placeholder="" type="number" />
+      <input class="!bg-yellow-100" nz-input placeholder="" type="number" />
       <span class="text-center text-red-400">MSCF</span>
     </div>
   </div>
@@ -42,27 +42,4 @@
     nzType="success"
     nzMessage="Start time: 00:41:12 - Duration: 1:20:14"
   ></nz-alert>
-
-  <!-- volume measurement -->
-  <!-- <div class="col-span-3 border-t border-gray-400"></div> -->
-  <div class="flex flex-col pb-3">
-    <span class="font-normal text-[12px]">Volume Measurement Controls</span>
-    <div class="flex gap-2 justify-center mt-2">
-      <div
-        class="flex items-center justify-center border border-gray-400 h-fit px-4"
-      >
-        Start
-      </div>
-      <div
-        class="flex items-center justify-center border border-gray-400 h-fit px-4"
-      >
-        Stop
-      </div>
-      <div
-        class="flex items-center justify-center border border-gray-400 h-fit px-4"
-      >
-        Reset
-      </div>
-    </div>
-  </div>
 </div>

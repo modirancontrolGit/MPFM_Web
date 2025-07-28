@@ -1,12 +1,46 @@
-<div class="h-full w-full flex flex-col gap-4">
-  <div class="w-full flex items-center bg-gray-200 font-semibold rounded-sm py-1">
+<div class="h-full w-full flex flex-col gap-3 md:py-6 md:px-10 p-2">
+  <div
+    class="w-full flex items-center bg-gray-200 font-semibold rounded-sm py-1 mb-2"
+  >
     <div class="grow flex justify-center border-r border-gray-400">OFFLINE</div>
     <div class="w-40 flex justify-center">NO ALARM</div>
-</div>
-  <div class="h-fit w-full grid grid-cols-10 gap-4 text-[10px] md:text-base">
-    <app-live-flow-rates class="h-full col-span-10 2xl:col-span-4"></app-live-flow-rates>
-    <app-live-volumes class="h-full col-span-10 2xl:col-span-2"></app-live-volumes>
-    <app-live-gas class="h-full col-span-10 2xl:col-span-4"></app-live-gas>
   </div>
-  <app-plot-options></app-plot-options>
+
+  <div
+    class="h-fit w-full grid grid-cols-10 gap-3 text-[10px] md:text-base transition-all duration-500 ease-in-out"
+  >
+    <div
+      class="flex flex-col justify-between gap-3 h-full col-span-10 2xl:col-span-4 transition-all duration-500 ease-in-out"
+    >
+      <app-live-flow-rates [@fadeResize]></app-live-flow-rates>
+      <app-process-values class="h-full" [@fadeResize]></app-process-values>
+    </div>
+    <div
+      class="flex flex-col justify-between gap-3 h-full col-span-10 2xl:col-span-2 transition-all duration-500 ease-in-out"
+    >
+      <app-live-volumes [@fadeResize]></app-live-volumes>
+      <app-volume-measurement-controls
+        class="h-full"
+        [@fadeResize]
+      ></app-volume-measurement-controls>
+    </div>
+    <app-live-gas
+      [@fadeResize]
+      class="h-full col-span-10 2xl:col-span-4 transition-all duration-500 ease-in-out"
+    ></app-live-gas>
+  </div>
+  <div class="bg-white rounded-md">
+    <app-plot-options
+      [@fadeResize]
+      class="transition-all duration-500 ease-in-out"
+    ></app-plot-options>
+    <app-std-chart
+      [@fadeResize]
+      class="transition-all duration-500 ease-in-out"
+    ></app-std-chart>
+    <app-gor-chart
+      [@fadeResize]
+      class="transition-all duration-500 ease-in-out"
+    ></app-gor-chart>
+  </div>
 </div>
