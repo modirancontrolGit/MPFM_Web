@@ -1,10 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./src/**/*.{html,ts}"
+    "./src/**/*.{html,ts}", // scan Angular components/templates
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        plotbg: "#e2fffd",
+        mainbg: "#b7d3d4",
+        primary: "#009999",
+        plot: "#74c0e0",
+      },
+    },
   },
   plugins: [],
-}
+};

@@ -55,7 +55,7 @@ export class StdChartComponent {
       stroke: {
         width: 2,
         curve: 'straight',
-        colors: ['#006327'],
+        colors: ['#74c0e0'],
       },
       title: {
         text: 'STD Flow Rates (STB/D)',

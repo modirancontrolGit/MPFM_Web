@@ -54,7 +54,7 @@ export class GorChartComponent {
       stroke: {
         width: 2,
         curve: 'straight',
-        colors: ['#d6a300'],
+        colors: ['#74c0e0'],
       },
       title: {
         text: 'GOR (SCF/STB)',
